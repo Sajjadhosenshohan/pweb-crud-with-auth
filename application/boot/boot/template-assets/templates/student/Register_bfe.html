@@ -1,0 +1,102 @@
+{% extends "layout/app-layout.html" %}
+
+<!-- {% set name = button|string + " Student" %}
+{% block title %}{{ name }}{% endblock %} -->
+{% extends "layout/app-layout.html" %}
+
+{% block title %}Student Registration{% endblock %}
+
+{% block content %}
+<div class="formBody">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-lg py-3">
+        <div class="container-fluid d-flex justify-content-between">
+            <div>
+                <a class="navbar-brand text-light fs-3" href="#">
+                    <img src="../assets/files/logo.png" alt="Logo" />
+                    বাংলা ফাইটার
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-secondary fw-normal">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">হোম</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">আমাদের সম্পর্কে</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">কোর্স সমূহ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">সেবা সমূহ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">লগ ইন</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">রেজিস্ট্রেশন</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid mt-5">
+        <div class="d-flex align-items-center justify-content-center">
+            <!-- Left Content -->
+            <div class="content d-flex align-items-end">
+                <div>
+                    <h1 class="display-4 fw-bold">বাংলা ফাইটার ইঞ্জিনিয়ারিং</h1>
+                    <p class="lead fw-light">
+                        আমাদের পেশাগত প্রশিক্ষণের মাধ্যমে আপনার কর্মজীবন সমৃদ্ধ করুন।
+                    </p>
+                    <a href="#" class="btn btn-warning rounded-pill text-dark btn-lg">
+                        কোর্স সমূহ
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Registration Form -->
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="registration-form">
+                    <h2 class="text-center mb-4">রেজিস্ট্রেশন করুন</h2>
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label class="form-label">
+                                    Name <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control" placeholder="Enter your name" />
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">
+                                    Mobile <span class="text-danger">*</span>
+                                </label>
+                                <input type="text" class="form-control" placeholder="Enter your mobile number" />
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label">
+                                    Password <span class="text-danger">*</span>
+                                </label>
+                                <input type="password" class="form-control" placeholder="Enter your password" />
+                            </div>
+                        </div>
+                        <!-- Form continues... -->
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">
+                                রেজিস্ট্রেশন
+                            </button>
+                            <button type="button" class="btn btn-secondary">
+                                লগ ইন
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

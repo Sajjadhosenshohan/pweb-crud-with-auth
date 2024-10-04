@@ -1,0 +1,34 @@
+body {
+    background: linear-gradient(to bottom right, #095e47, #0b7a6f);
+    min-height: 100vh;
+  }
+
+  .content {
+    color: white;
+    padding: 5rem 3rem;
+  }
+
+  .registration-form {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-brand img {
+    width: 60px;
+  }
+
+  nav > div {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+
+  .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+  }
